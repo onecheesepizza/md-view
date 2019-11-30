@@ -1,17 +1,19 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const expbs = require('express-handlebars');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
 
-var app = express();
+const app = express();
 
 // view engine setup
+app.engine('handlebars', expbs());
+app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -20,6 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //public npm files
 app.use('/github-markdown-css', express.static(path.join(__dirname, 'node_modules/github-markdown-css')));
+app.use('/highlight.js', express.static(path.join(__dirname, 'node_modules/highlight.js')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
