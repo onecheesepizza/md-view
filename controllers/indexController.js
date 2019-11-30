@@ -23,7 +23,11 @@ exports.index = function(req, res, next) {
         console.log("MD converted to HTML.");
 
         // render page
-        res.render('index', {mdHTML: markdownHTML});
+        res.render('index', {
+            mdHTML: markdownHTML,
+            title: 'md-view',
+            css: '/github-markdown-css/github-markdown.css'
+        });
         console.log("HTML response sent.");
     })
     .catch(function(error) {

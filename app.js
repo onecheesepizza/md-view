@@ -18,6 +18,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+//public npm files
+app.use('/github-markdown-css', express.static(path.join(__dirname, 'node_modules/github-markdown-css')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
