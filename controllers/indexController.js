@@ -5,16 +5,23 @@ const showdownHighlight = require("showdown-highlight")
 const converter = new showdown.Converter({
     extensions: [showdownHighlight]
 });
-//enable automatic URL linking etc via github flavor
+// enable automatic URL linking etc via github flavor
 converter.setFlavor('github');
 converter.setOption('ghCodeBlocks', true);
 
 exports.index = function(req, res, next) {
-    //get file URL from request
-    const mdFileURL = req.query.url;
-    console.log("URL requested:", mdFileURL);
-    console.log("getting file from URL...");
-    //get data from URL
+    // get file URL from request
+    let mdFileURL = req.query.url;
+
+    // append &dl=1 to file if needed to allow raw Dropbox files
+    if (mdFileURL.slice(mdFileURL.length-3) === ".md") {
+        mdFileURL = mdFileURL + "?dl=1";
+    } else if (mdFileURL.slice(mdFileURL.length-8) === ".md?dl=0") {
+        mdFileURL = (mdFileURL.slice(0, mdFileURL.length-8)) + ".md?dl=1";
+    }
+
+    // get data from URL
+    console.log("getting file from:", mdFileURL);
     axios
     .get(mdFileURL)
     .then(function(response) {

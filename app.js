@@ -6,7 +6,6 @@ const logger = require('morgan');
 const expbs = require('express-handlebars');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 
 const app = express();
 
@@ -25,7 +24,6 @@ app.use('/github-markdown-css', express.static(path.join(__dirname, 'node_module
 app.use('/highlight.js', express.static(path.join(__dirname, 'node_modules/highlight.js')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
