@@ -18,7 +18,7 @@ Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
 ----
 
-![md-view](/public/images/md-view-sc-640-opt.gif)
+![md-view](/public/images/md-view-sc-640-opt2.gif)
 
 ----
 ## run locally
