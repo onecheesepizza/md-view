@@ -1,6 +1,6 @@
 # md-view
 
-A simple [Express](https://expressjs.com/) app that displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can be used to modify a raw markdown URL to make it immediately viewable in the broswer when shared. 
+A simple [Express](https://expressjs.com/) app that displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can be used to modify a raw markdown URL to make it immediately viewable in the broswer for sharing. 
 
 Use at: https://md-view.glitch.me  
 Example: https://md-view.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md
@@ -17,9 +17,11 @@ Code highlighting by [highlight.js](https://highlightjs.org/) and [showdown-high
 
 Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
+Boilerplate generated with [Express application generator](https://expressjs.com/en/starter/generator.html).
+
 ----
 
-![md-view](/public/images/md-view-sc-640-opt2.gif)
+![md-view](https://github.com/onecheesepizza/md-view/raw/master/public/images/md-view-sc-640-opt2.gif)
 
 ----
 ## run locally
