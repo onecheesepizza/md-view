@@ -3,7 +3,7 @@
 A simple [Express](https://expressjs.com/) app that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can be used to modify a raw markdown URL to make it immediately viewable in the broswer for sharing. 
 
 Use at: [https://mdview.glitch.me](https://mdview.glitch.me)  
-Example: [https://mdview.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)
+Example: [https://mdview.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
 
 # about
 
@@ -23,6 +23,9 @@ Boilerplate generated with [Express application generator](https://expressjs.com
 
 # run locally
 
+GitHub: [https://github.com/onecheesepizza/md-view](https://github.com/onecheesepizza/md-view)
+
+
 `git clone` the repo to your computer, `cd` to the repo directory, then:
 
 ```bash
@@ -35,3 +38,6 @@ npm install
 node bin/www
 ```
 and visit [http://localhost:3000](http://localhost:3000)
+
+----
+
