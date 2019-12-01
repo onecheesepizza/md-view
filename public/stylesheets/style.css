@@ -11,6 +11,10 @@
 a.nav {
   float:right;
 }
+#feedbackEl{
+  transition: opacity .25s ease;
+
+}
 @media (max-width: 767px) {
   .markdown-body {
       padding: 15px;

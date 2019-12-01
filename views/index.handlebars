@@ -8,23 +8,32 @@
 <!-- clipboard.js -->
 <script src='/clipboard/clipboard.min.js'></script>
 <script>
-    //set data-clipboard-text to full window URL (file prepended with app URL) for sharing
+    //this should be moved to a .js file but for now its here. 
+    //set data-clipboard-text in #copy element to full window URL (file prepended with app URL) for sharing
     document.querySelector('#copy').setAttribute('data-clipboard-text', window.location.href);
-    //init Clipboard.js
+    //init Clipboard.js, listen to #copy element
     var clipboard = new ClipboardJS('#copy');
     //copy success
     clipboard.on('success', function (e) {
-        //create success feedback element
+        //add feedback element to page with timed fade in / fade out
+        //create success feedback element with opacity set to 0
         let feedbackEl = document.createElement('div');
         feedbackEl.setAttribute('id', 'feedbackEl')
-        feedbackEl.setAttribute('style', 'position:absolute; top:1em; max-width: 980px; display:block; width:100%; text-align:center;');
+        feedbackEl.setAttribute('style', 'position:absolute; top:1em; max-width: 980px; display:block; width:100%; text-align:center; opacity:0;');
         feedbackEl.innerHTML=`<p>url copied</p>`;
-        //add feedback element to page
         document.querySelector('.markdown-body').prepend(feedbackEl);
+        //set opacity to 1, eased .25 in css
+        setTimeout(()=>{
+            document.querySelector('#feedbackEl').style.opacity = '1';
+        },10);
+        //set opacity to 0, eased .25s in css
+        setTimeout(()=>{
+            document.querySelector('#feedbackEl').style.opacity = '0';
+        },2000);
         //remove feedback element from page after time delay
         setTimeout(()=>{
-            document.querySelector('#feedbackEl').remove();
-        },2000);
+            document.querySelector('#feedbackEl').style.opacity = '0';
+        },3000);
     });
     //copy error
     clipboard.on('error', function (e) {
