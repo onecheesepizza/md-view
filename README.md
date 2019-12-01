@@ -18,6 +18,9 @@ Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
 ----
 
+![md-view](/public/images/md-view-sc-640-opt.gif)
+
+----
 ## run locally
 
 `git clone` the repo to your computer, `cd` to the app directory, then:
