@@ -1,12 +1,12 @@
-<div class="markdown-body">
-    <div id="navContainer">
-    <a class='nav' id='copy' href="#" data-clipboard-text='{{mdFileURL}}'>Copy URL</a><br>
-    <a class='nav' href="{{mdFileURL}}" download target="_blank">Download .md</a>
+<div class='markdown-body'>
+    <div id='navContainer'>
+    <a class='nav' id='copy' href='#' data-clipboard-text='{{mdFileURL}}'>Copy URL</a><br>
+    <a class='nav' href='{{mdFileURL}}' download target='_blank'>Download .md</a>
     </div>
     {{{mdHTML}}}
 </div>
 <!-- clipboard.js -->
-<script src="/clipboard/clipboard.min.js"></script>
+<script src='/clipboard/clipboard.min.js'></script>
 <script>
     //set data-clipboard-text to full window URL (file prepended with app URL) for sharing
     document.querySelector('#copy').setAttribute('data-clipboard-text', window.location.href);
