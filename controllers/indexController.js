@@ -22,7 +22,8 @@ exports.index = function(req, res, next) {
         || mdFileURL.slice(0,4) !='http'
         ) {
         res.render('url-input', {
-            pageStyle: 'form-reset.css'
+            pageStyle: 'form-reset.css',
+            title: 'md-view'
         });
     // render markdown if .md file provided in URL  
     } else if (mdFileURL.slice(-3) === '.md' || mdFileURL.slice(-8,-5) === '.md'){
