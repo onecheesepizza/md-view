@@ -42,6 +42,7 @@ exports.index = function(req, res, next) {
             // render page
             res.render('index', {
                 mdHTML: markdownHTML,
+                mdFileURL: mdFileURL,
                 title: 'md-view',
                 highlightStyle: 'highlight.js/styles/atom-one-dark.css'
             });

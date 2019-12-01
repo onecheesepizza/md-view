@@ -22,6 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //public npm files
 app.use('/github-markdown-css', express.static(path.join(__dirname, 'node_modules/github-markdown-css')));
 app.use('/highlight.js', express.static(path.join(__dirname, 'node_modules/highlight.js')));
+app.use('/clipboard', express.static(path.join(__dirname, 'node_modules/clipboard/dist')));
 
 app.use('/', indexRouter);
 
