@@ -38,6 +38,3 @@ npm install
 node bin/www
 ```
 and visit [http://localhost:3000](http://localhost:3000)
-
-----
-
