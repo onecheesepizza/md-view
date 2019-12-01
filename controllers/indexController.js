@@ -12,7 +12,6 @@ converter.setOption('ghCodeBlocks', true);
 exports.index = function(req, res, next) {
     // get file URL from request
     let mdFileURL = req.query.url;
-    // console.log(mdFileURL.slice(-8, -5));
     // render input form if... 
     if ( 
         //no url 
