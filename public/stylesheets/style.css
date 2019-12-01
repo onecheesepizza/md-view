@@ -5,6 +5,12 @@
   margin: 0 auto;
   padding: 45px;
 }
+#navContainer {
+  clear:both;
+}
+a.nav {
+  float:right;
+}
 @media (max-width: 767px) {
   .markdown-body {
       padding: 15px;
