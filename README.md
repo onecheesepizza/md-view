@@ -17,7 +17,8 @@ Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
 Boilerplate generated with [Express application generator](https://expressjs.com/en/starter/generator.html).
 
-# 
+----
+
 ![md-view](https://github.com/onecheesepizza/md-view/raw/master/public/images/md-view-sc-640-opt2.gif)
 
 # run locally
