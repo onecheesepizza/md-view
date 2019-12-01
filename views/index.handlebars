@@ -16,14 +16,15 @@
     clipboard.on('success', function (e) {
         //create success feedback element
         let feedbackEl = document.createElement('div');
-        feedbackEl.innerHTML=`<p id='feedbackEl' style='position: absolute; top:1em; float:right; text-align:center; margin: '0 auto';'>url copied</p>`;
+        feedbackEl.setAttribute('id', 'feedbackEl')
+        feedbackEl.setAttribute('style', 'position:absolute; top:1em; max-width: 980px; display:block; width:100%; text-align:center;');
+        feedbackEl.innerHTML=`<p>url copied</p>`;
         //add feedback element to page
         document.querySelector('.markdown-body').prepend(feedbackEl);
         //remove feedback element from page after time delay
         setTimeout(()=>{
             document.querySelector('#feedbackEl').remove();
         },2000);
-        console.log();
     });
     //copy error
     clipboard.on('error', function (e) {
