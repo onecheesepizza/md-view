@@ -5,9 +5,7 @@ A simple [Express](https://expressjs.com/) app that displays a markdown file fro
 Use at: https://md-view.glitch.me  
 Example: https://md-view.glitch.me/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md
 
-----
-
-## about
+# about
 
 Served using [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [express-handlebars](https://github.com/ericf/express-handlebars), and [Axios](https://github.com/axios/axios). 
 
@@ -19,12 +17,10 @@ Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
 Boilerplate generated with [Express application generator](https://expressjs.com/en/starter/generator.html).
 
-----
-
+# 
 ![md-view](https://github.com/onecheesepizza/md-view/raw/master/public/images/md-view-sc-640-opt2.gif)
 
-----
-## run locally
+# run locally
 
 `git clone` the repo to your computer, `cd` to the app directory, then:
 
