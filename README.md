@@ -22,7 +22,7 @@ Boilerplate generated with [Express application generator](https://expressjs.com
 
 # run locally
 
-`git clone` the repo to your computer, `cd` to the app directory, then:
+`git clone` the repo to your computer, `cd` to the repo directory, then:
 
 ```bash
 npm install
