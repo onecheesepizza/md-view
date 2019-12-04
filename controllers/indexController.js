@@ -1,7 +1,7 @@
 // Handle Author update on POST.
 const axios = require('axios');
 const showdown = require('showdown');
-const showdownHighlight = require('showdown-highlight')
+const showdownHighlight = require('showdown-highlight');
 const converter = new showdown.Converter({
     extensions: [showdownHighlight]
 });
