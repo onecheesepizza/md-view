@@ -2,8 +2,8 @@
 
 A simple [Express](https://expressjs.com/) app that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can be used to modify a raw markdown URL to make it immediately viewable in the browser for sharing. 
 
-Use at: [https://mdview.app](https://mdview.app)  
-Example: [https://mdview.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
+Use at: [https://mdview.herokuapp.com](https://mdview.herokuapp.com)  
+Example: [https://mdview.herokuapp.com/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.herokuapp.com/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
 
 # about
 
@@ -31,10 +31,5 @@ GitHub: [https://github.com/onecheesepizza/md-view](https://github.com/onecheese
 ```bash
 npm install
 npm start
-```
-or
-```bash
-npm install
-node bin/www
 ```
 and visit [http://localhost:3000](http://localhost:3000)
