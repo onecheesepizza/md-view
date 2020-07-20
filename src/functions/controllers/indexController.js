@@ -16,14 +16,10 @@ exports.index = function(req, res, next) {
     if ( 
         //no url 
         !mdFileURL 
-        // url does not end in .md or .md?dl=x
-        ||  (mdFileURL.slice(-3) != '.md' && mdFileURL.slice(-8, -5) != '.md') 
-        //url does not start with http
-        || mdFileURL.slice(0,4) !='http'
         ) {
         res.render('url-input', {
             pageStyle: 'form-reset.css',
-            title: 'md-view'
+            title: 'md-view',
         });
     // render markdown if .md file provided in URL  
     } else if (mdFileURL.slice(-3) === '.md' || mdFileURL.slice(-8,-5) === '.md'){
@@ -58,6 +54,18 @@ exports.index = function(req, res, next) {
         .catch(function(error) {
             // handle error
             console.log(error);
+            res.render('url-input', {
+                pageStyle: 'form-reset.css',
+                title: 'md-view',
+                message: '.md file not found'
+            });
+        });
+    } else {
+        console.log("invalid URL");
+        res.render('url-input', {
+            pageStyle: 'form-reset.css',
+            title: 'md-view',
+            message: 'invalid url'
         });
     }
 };
