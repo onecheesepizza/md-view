@@ -1,13 +1,13 @@
 # md-view
 
-A simple [Express](https://expressjs.com/) app that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can be used to modify a raw markdown URL to make it immediately viewable in the browser for sharing. 
+A simple [Express](https://expressjs.com/) app deployed as a Netlify serverless function that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can modify a raw markdown URL to make it immediately viewable in the browser for sharing. 
 
-Use at: [https://mdview.herokuapp.com](https://mdview.herokuapp.com)  
-Example: [https://mdview.herokuapp.com/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.herokuapp.com/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
+Use at: [https://mdview.netlify.app](https://mdview.netlify.app)  
+Example: [https://mdview.netlify.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.netlify.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
 
 # about
 
-Served using [Node.js](https://nodejs.org/), [Express](https://expressjs.com/), [express-handlebars](https://github.com/ericf/express-handlebars), and [Axios](https://github.com/axios/axios). 
+Served using [Netlify Functions](https://www.netlify.com/products/functions/), [Node.js](https://nodejs.org/), [serverless-http](https://github.com/dougmoscrop/serverless-http), [Express](https://expressjs.com/), [express-handlebars](https://github.com/ericf/express-handlebars), and [Axios](https://github.com/axios/axios). 
 
 Markdown converted to HTML with [Showdown](http://showdownjs.com/), and styled with [github-markdown-css](https://github.com/sindresorhus/github-markdown-css).
 
@@ -15,13 +15,18 @@ Code highlighting by [highlight.js](https://highlightjs.org/) and [showdown-high
 
 Clipboard copy functionality by [clipboard.js](https://clipboardjs.com/).
 
-Boilerplate generated with [Express application generator](https://expressjs.com/en/starter/generator.html).
+Deployed to [Netlify](https://www.netlify.com/)  
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7b535e5a-39e2-475a-9547-887287402f68/deploy-status)](https://app.netlify.com/sites/mdview/deploys)
 
 ----
 
-![md-view](https://github.com/onecheesepizza/md-view/raw/master/public/images/md-view-sc-640-opt2.gif)
+![md-view](README-md-view-sc-640-opt2.gif)
 
 # run locally
+using [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md)  
+```bash
+npm install netlify-cli -g
+```
 
 GitHub: [https://github.com/onecheesepizza/md-view](https://github.com/onecheesepizza/md-view)
 
@@ -32,4 +37,3 @@ GitHub: [https://github.com/onecheesepizza/md-view](https://github.com/onecheese
 npm install
 npm start
 ```
-and visit [http://localhost:3000](http://localhost:3000)
