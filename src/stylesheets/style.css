@@ -5,6 +5,10 @@
   margin: 0 auto;
   padding: 45px;
 }
+.message {
+  text-align: center;
+  margin-top: 1.5em !important;
+}
 #navContainer {
   clear:both;
 }
@@ -12,8 +16,7 @@ a.nav {
   float:right;
 }
 #feedbackEl{
-  transition: opacity .25s ease;
-
+  transition: opacity .5s ease;
 }
 @media (max-width: 767px) {
   .markdown-body {

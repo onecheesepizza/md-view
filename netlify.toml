@@ -1,0 +1,20 @@
+[build]
+  # Directory to change to for package.json before starting a build.
+  base = "/"
+
+  # Directory that contains the deploy-ready HTML files
+  publish = "/build/"
+
+  # Default build command.
+  command = "npm run build"
+
+  # Directory with the serverless Lambda functions to deploy to AWS.
+  functions = "/src/functions"
+
+# redirect page requests to netlify function with express server
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/server"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
+  headers = {X-From = "Netlify"}
