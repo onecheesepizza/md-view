@@ -6,6 +6,7 @@ const buildFiles = [
     './node_modules/highlight.js',
     './node_modules/clipboard/dist',
     './src/stylesheets',
+    './src/views'
 ];
 
 //create output folder
