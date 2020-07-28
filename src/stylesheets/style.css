@@ -9,6 +9,14 @@
   text-align: center;
   margin-top: 1.5em !important;
 }
+.footer {
+  text-align: center;
+  margin: 1em;
+}
+.footer a {
+  margin: 1em;
+  font-size: .75em;
+}
 #navContainer {
   clear:both;
 }
