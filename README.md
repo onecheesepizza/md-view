@@ -20,7 +20,7 @@ Deployed to [Netlify](https://www.netlify.com/)
 
 ----
 
-![md-view](README-md-view-sc-640-opt2.gif)
+![md-view](https://github.com/onecheesepizza/md-view/blob/master/README-md-view-sc-640-opt2.gif?raw=true)
 
 # run locally
 using [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md)  
