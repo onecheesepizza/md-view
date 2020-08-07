@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node build.js && netlify dev",
     "dev": "node build.js && netlify dev",
+    "deploy": "git push && netlify watch",
     "build": "node build.js"
   },
   "dependencies": {
