@@ -2,9 +2,9 @@ const fs = require('fs-extra');
 
 //node_modules to copy on build
 const nodeModules = [
-    './node_modules/github-markdown-css',
-    './node_modules/highlight.js',
-    './node_modules/clipboard/dist'
+    'github-markdown-css',
+    'highlight.js',
+    'clipboard/dist'
 ];
 //files to copy on build
 const srcAssetFiles = [
@@ -18,7 +18,7 @@ fs.emptyDir('build', (err) => {
     //copy node modules
     nodeModules.forEach(file => {
         //copy files
-        fs.copy('' + file, './build/' + file, (err) => {
+        fs.copy('./node_modules/' + file, './build/' + file, (err) => {
             if (err) throw err;
             console.log(file, 'was copied to /build/',);
         });
