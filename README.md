@@ -2,8 +2,8 @@
 
 A simple [Express](https://expressjs.com/) app deployed as a [Netlify](https://www.netlify.com/products/functions/) serverless function that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can modify a raw markdown URL to make it immediately viewable in the browser for sharing. 
 
-Use at: [https://mdview.app](https://mdview.app)  
-Example: [https://mdview.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.app/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
+Use at: [https://mdview.onecheesepizza.dev](https://mdview.onecheesepizza.dev)  
+Example: [https://mdview.onecheesepizza.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.onecheesepizza.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
 
 # about
 
