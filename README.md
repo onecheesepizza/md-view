@@ -2,8 +2,8 @@
 
 A simple [Express](https://expressjs.com/) app deployed as a [Netlify](https://www.netlify.com/products/functions/) serverless function that parses and displays a markdown file from a URL, including [shared Dropbox URLs](https://help.dropbox.com/files-folders/share/view-only-access). When deployed, it can modify a raw markdown URL to make it immediately viewable in the browser for sharing. 
 
-Use at: [https://mdview.onecheesepizza.dev](https://mdview.onecheesepizza.dev)  
-Example: [https://mdview.onecheesepizza.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.onecheesepizza.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
+Use at: [https://mdview.zebranode.dev](https://mdview.zebranode.dev)  
+Example: [https://mdview.zebranode.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md](https://mdview.zebranode.dev/?url=https://raw.githubusercontent.com/microsoft/vscode/master/README.md)  
 
 # about
 
@@ -20,7 +20,7 @@ Deployed to [Netlify](https://www.netlify.com/)
 
 ----
 
-![md-view](https://github.com/onecheesepizza/md-view/blob/master/README-md-view-sc-640-opt2.gif?raw=true)
+![md-view](https://github.com/zebranode/md-view/blob/master/README-md-view-sc-640-opt2.gif?raw=true)
 
 # run locally
 using [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.md)  
@@ -28,7 +28,7 @@ using [Netlify Dev](https://github.com/netlify/cli/blob/master/docs/netlify-dev.
 npm install netlify-cli -g
 ```
 
-GitHub: [https://github.com/onecheesepizza/md-view](https://github.com/onecheesepizza/md-view)
+GitHub: [https://github.com/zebranode/md-view](https://github.com/zebranode/md-view)
 
 
 `git clone` the repo to your computer, `cd` to the repo directory, then:
